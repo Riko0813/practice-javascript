@@ -1,33 +1,22 @@
-function changeColor(){
-document.getElementById("text").style.color="red";
+//クリックされたら動作する
+
+function errorInput(){
+
+    console.log(document.getElementById("month").value)
+    console.log(document.getElementById("day").value)
+
+    const month = document.getElementById("month").value;
+    const day =  document.getElementById("day").value;
+
+    console.log("month:",month,"day:",day)
+
 }
 
+//document.getElementById("month")はタグを確認するだけ
+//valueはそのタグの値を示す
 
-//document.getElementById("text").style.Color="red";
-/* これは、ドキュメントの中の「text」というIDを持っている
-　　タグのスタイルの色を赤にしてください。*/
-
-
-
-
-//document.querySelector("h1").style.color="red";
-let count = 0;
-function herasuCount(){
-    
-    count--;
-
-    document.getElementById("counter").innerText=count;   
-
-    if(count<-4)
-        count=0;
-}
-
-function increaseCount(){
-    
-    count++;
-
-    document.getElementById("counter").innerText=count;   
-
-    if(count>4)
-        count=0;
-}
+/*
+javaScriptのプログラムとHTMLファイルはどこで対応しているか
+タグについているIDで紐づく
+タグの中にある負荷情報のことを属性という
+*/
