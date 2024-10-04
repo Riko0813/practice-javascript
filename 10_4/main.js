@@ -1,5 +1,3 @@
-
-
 //クリックされたら動作する
 
 function errorInput(){
