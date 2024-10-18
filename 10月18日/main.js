@@ -83,4 +83,3 @@ function ClickCounterGame(){
     gemeContainer.appendChild(button3);
     gemeContainer.appendChild(counter);
 }
-
