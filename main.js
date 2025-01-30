@@ -1,4 +1,4 @@
-// function ClickCounterGame(){
+//function ClickCounterGame(){
 //     let count = 0;
 //     //countという変数を準備して、0を代入する
 
@@ -51,7 +51,7 @@ function stertNumberGuessGame(){
     const gameContainer = document.getElementById("game-container");
     const randomNumber = Math.floor(Math.random()*100) + 1;
     let message = document.createElement("p");
-    message.textContent = randomNumber
+  
     let input = document.createElement("input");
     input.type = "number";
     input.placeholder = "好きな数字を入力してください (1~100)"
@@ -70,7 +70,17 @@ function stertNumberGuessGame(){
         }else{
             message.textContent = "小さい"
         }
+        count++;
+        countDisplay.textContent = `試行錯誤: ${count}`;
+
     })
+
     gameContainer.appendChild(button);
+
+    let count = 0;
+    const countDisplay = document.createElement("p");
+    countDisplay.textContent = `試行錯誤 :  ${count}`;
+    gameContainer.appendChild(countDisplay);
+
 }
 stertNumberGuessGame();
